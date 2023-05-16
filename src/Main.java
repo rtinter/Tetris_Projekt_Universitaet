@@ -1,6 +1,6 @@
 import processing.core.PApplet;
 
-//nejivbriv
+//nejivbrivu
 public class Main extends PApplet {
     spielfeld spielfeld;
     tetromino tetromino;
