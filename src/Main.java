@@ -11,7 +11,7 @@ public class Main extends PApplet {
 
     @Override
     public void settings() {
-        size(400, 400);
+        size(700, 600);
         spielfeld = new spielfeld(200, 400, 20);
         tetromino = new tetromino(4, 0);
     }
