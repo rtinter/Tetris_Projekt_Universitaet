@@ -16,7 +16,7 @@ public class Main extends PApplet {
         tetromino = new tetromino(4, 0);
     }
 
-    public static final int speed = 10;
+    public static final int speed = 30;
 
     @Override
     public void draw() {

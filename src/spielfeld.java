@@ -16,14 +16,14 @@ public class spielfeld {
 
     public void draw(PApplet p) {
         p.fill(255);
-        for (int y = 0; y < rows; y++) {
-            for (int x = 0; x < columns; x++) {
-                if (grid[y][x] == null) {
+        for (int x = 0; x < rows; x++) {
+            for (int y = 0; y < columns; y++) {
+                if (grid[x][y] == null) {
                     p.stroke(0);
-                    p.rect(x * blockSize, y * blockSize, blockSize, blockSize);
+                    p.rect(y * blockSize, x * blockSize, blockSize, blockSize);
                 } else {
-                    p.fill(grid[y][x]);
-                    p.rect(x * blockSize, y * blockSize, blockSize, blockSize);
+                    p.fill(grid[x][y]);
+                    p.rect(y * blockSize, x * blockSize, blockSize, blockSize);
                 }
             }
         }
